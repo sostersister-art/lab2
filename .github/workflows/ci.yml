@@ -21,7 +21,9 @@ jobs:
           node-version: '18'
 
       - name: Install dependencies
-        run: npm install
+  run: npm install
+  working-directory: vue-paper-dashboard
 
-      - name: Build project
-        run: npm run build
+- name: Build project
+  run: npm run build
+  working-directory: vue-paper-dashboard
